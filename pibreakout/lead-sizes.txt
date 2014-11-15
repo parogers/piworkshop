@@ -1,0 +1,31 @@
+Zener diode:
+
+	http://www.digikey.ca/product-detail/en/1N5226BTR/1N5226BFSCT-ND/1992218
+	(0.533mm = 0.020")
+
+Resistors:
+
+	http://www.digikey.ca/product-detail/en/CF14JT10K0/CF14JT10K0CT-ND/1830374
+	(0.022")
+
+Rectangular headers:
+
+	http://www.digikey.ca/product-detail/en/961102-6404-AR/3M9447-ND/2071488
+	(0.025" on a flat, 0.035 diagonal)
+
+AP Circuits drill sizes: (after plating)
+
+.017"
+.032"
+.039"
+.057"
+.122"
+	
+.025"
+.035"
+.049"
+.083"
+.149"
+
+1.0160
+1.5240

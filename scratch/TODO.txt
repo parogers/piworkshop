@@ -1,0 +1,22 @@
+TODO
+----
+
+* Handouts
+* Assemble kits
+* nmap - discover pi on the network
+* Fritzing for diagrams? vs schematics
+* Digikey order
+  * Header/sockets
+  * IC sockets (14 pin)
+  * Quick connects
+  * Random components?
+  * Octal buffer (3.3 -> 5v shifter)
+  * Transistor for DC motor?
+  * Thermistor
+  * Light sensor
+* Buyapi (8 kits)
+  * Raspberry pi B+
+  * WIFI modules?
+* Canadacomputers
+  * Micro SD card with adapter
+* Does the pi have a ramdisk area? (automounted?)

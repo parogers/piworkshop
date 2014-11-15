@@ -1,0 +1,7 @@
+Headers on board:
+
+	GPIO (20 pins, 2-26 excluding 7,8,9,10,11)
+
+	3.3V, 5V, GND
+
+	ATTINY84 (7 pins, PA0,1,2,3 PB0,1,2)

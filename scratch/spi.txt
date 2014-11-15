@@ -1,0 +1,84 @@
+
+Arduino IDE with SPI programming
+* projects.drogon.net/raspberry-pi/gertboard/arduino-ide-installation-isp/
+* Install modified avrdude
+  * wget http://project-downloads.drogon.net/gertboard/avrdude_5.10-4_armhf.deb
+  * sudo dpkg -i avrdude_5.10-4_armhf.deb
+  * sudo chmod 4755 /usr/bin/avrdude
+* Update /usr/share/arduino/hardware/arduino/programmers.txt and include
+  gpio.name=Raspberry Pi GPIO
+  gpio.protocol=gpio
+* fixspi.sh to set gpio pins properly (arduino ide bit bangs)
+* python code
+  * https://github.com/lthiery/SPI-Py
+  * git clone https://github.com/lthiery/SPI-Py.git
+
+Attiny SPI code: (page 111 of the datasheet)
+
+	init:
+		; enable three-wire mode (DO, DI, USCK)
+		; enable clock source (external, positive edge)
+		; and counter clock source (external, both edges)
+		ldi r16,(1<<USIWM0)|(1<<USICS1)
+		out USICR,r16
+		...
+		; set DO and USCK as output in DDRB
+
+	SlaveSPITransfer:
+		; move r16 into USI data register for sending to master
+		out USIDR,r16
+		; set overflow interrupt flag high (clear flag?)
+		ldi r16,(1<<USIOIF)
+		out USISR,r16
+
+	SlaveSPITransfer_loop:
+		in r16, USISR
+		; skip if bit in register is set (USI status register,
+		; checking the overflow interrupt flag)
+		sbrs r16, USIOIF
+		rjmp SlaveSPITransfer_loop
+		; store the USI data in r16
+		in r16,USIDR
+		ret
+
+	(C translation http://www.avrfreaks.net/comment/411794#comment-411794)
+
+	USIBR = USI buffer register
+	USIDR = USI data register (live)
+	USISR = USI status register
+
+		USISIF = start condition interrupt flag
+		USIOIF = overflow condition interrupt flag
+		USIPF = stop condition flag
+		USIDC = data collision flag
+		USICNT0/1/2/3 = counter value
+
+	USICR = USI control register
+
+		USISIE = start condition interrupt enable
+		USIOIE = counter overflow interrupt enable
+		USIWM0/1 = wire mode (two wire, three wire, etc)
+		USICS0/1 = clock source select
+		USICLK = shift data register
+		USITC = toggle clock port pin (USCK/SCL)
+
+Python SPI lib:
+
+	https://github.com/lthiery/SPI-Py
+
+Python SPI
+* apt-get install python-dev
+* git clone https://github.com/lthiery/SPI-Py
+* build install
+* what about https://github.com/doceme/py-spidev
+* Useful stuff http://louisthiery.com/spi-python-hardware-spi-for-raspi/
+
+Timing
+* 1MHz clock speed
+* 1/1MHz = 1e-6 s = 1 us per tick
+* 8*1 us = 8 us = 8000 ns to transfer a byte
+* attiny running at 8MHz (1MIPS / MHZ = 8MIPS)
+
+  Time per instruction: 1/8e6 = 0.125 us = 125 ns
+
+  Instructions in the time to transfer one byte: 8000 ns / 125 ns = 64

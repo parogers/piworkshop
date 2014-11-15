@@ -1,0 +1,401 @@
+EESchema Schematic File Version 2  date Fri 14 Nov 2014 15:34:06 EST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:halleffect
+LIBS:photor
+LIBS:miscpcs-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "14 nov 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 2800 6200
+Wire Wire Line
+	2800 6200 2800 6600
+Wire Wire Line
+	2200 6200 1900 6200
+Wire Wire Line
+	3400 6200 3550 6200
+Connection ~ 3050 2350
+Wire Wire Line
+	3050 2600 3050 2350
+Wire Wire Line
+	3050 2350 3050 2200
+Wire Wire Line
+	3800 2350 3950 2350
+Wire Wire Line
+	8000 5100 8000 5200
+Wire Wire Line
+	8000 5200 8000 5400
+Connection ~ 2500 4900
+Wire Wire Line
+	2500 4900 2100 4900
+Wire Wire Line
+	2100 4900 2100 4800
+Wire Wire Line
+	3700 3850 3900 3850
+Wire Wire Line
+	3050 3850 3200 3850
+Wire Wire Line
+	5450 5300 5200 5300
+Wire Wire Line
+	5200 5300 5200 5000
+Wire Wire Line
+	4550 5300 5000 5300
+Wire Wire Line
+	5000 5300 5000 5000
+Wire Wire Line
+	7200 4450 7800 4450
+Wire Wire Line
+	7800 4450 7800 4200
+Wire Wire Line
+	7450 2250 6800 2250
+Wire Wire Line
+	7950 2250 8150 2250
+Wire Notes Line
+	5350 2050 5350 2450
+Connection ~ 5450 2950
+Wire Wire Line
+	5450 3250 5450 2950
+Wire Wire Line
+	5200 3100 4500 3100
+Wire Wire Line
+	5200 3100 5200 2750
+Wire Wire Line
+	4500 2950 4950 2950
+Wire Wire Line
+	4950 2950 5100 2950
+Wire Wire Line
+	5100 2950 5100 2750
+Wire Wire Line
+	5300 2750 5300 2950
+Wire Wire Line
+	5300 2950 5450 2950
+Wire Wire Line
+	5450 2950 5750 2950
+Wire Wire Line
+	4950 3250 4950 2950
+Connection ~ 4950 2950
+Wire Notes Line
+	5050 2050 5050 2450
+Wire Wire Line
+	8550 2250 8700 2250
+Wire Wire Line
+	8700 2250 8700 2500
+Wire Wire Line
+	4500 3100 4500 3200
+Wire Wire Line
+	8100 4200 8100 4450
+Wire Wire Line
+	8000 4600 8000 4200
+Wire Wire Line
+	8100 4450 8400 4450
+Wire Wire Line
+	8400 4450 8650 4450
+Wire Wire Line
+	8650 4450 8650 4600
+Wire Wire Line
+	8400 4600 8400 4450
+Connection ~ 8400 4450
+Wire Wire Line
+	7900 4200 7900 4600
+Wire Wire Line
+	7900 4600 7200 4600
+Wire Wire Line
+	5100 5000 5100 5550
+Wire Wire Line
+	1350 4250 2100 4250
+Wire Wire Line
+	2100 4250 2200 4250
+Wire Wire Line
+	2500 4050 2500 3850
+Wire Wire Line
+	2500 3850 2650 3850
+Wire Wire Line
+	2500 4450 2500 4900
+Wire Wire Line
+	2500 4900 2500 5050
+Wire Wire Line
+	2100 4400 2100 4250
+Connection ~ 2100 4250
+Wire Wire Line
+	8000 5200 8400 5200
+Wire Wire Line
+	8400 5200 8400 5100
+Connection ~ 8000 5200
+Wire Wire Line
+	3300 2350 3050 2350
+Wire Wire Line
+	2850 2200 2850 2350
+Wire Wire Line
+	2850 2350 2400 2350
+Wire Wire Line
+	2700 6200 2800 6200
+Wire Wire Line
+	2800 6200 2900 6200
+$Comp
+L R R?
+U 1 1 54666692
+P 3150 6200
+F 0 "R?" V 3230 6200 50  0000 C CNN
+F 1 "R" V 3150 6200 50  0000 C CNN
+	1    3150 6200
+	0    1    1    0   
+$EndComp
+Text Label 3550 6200 0    60   ~ 0
+VCC
+Text Label 1900 6200 0    60   ~ 0
+GND
+Text Label 2800 6600 0    60   ~ 0
+Input to Pi
+$Comp
+L THERMISTOR TH?
+U 1 1 54662F3F
+P 2450 6200
+F 0 "TH?" V 2550 6250 50  0000 C CNN
+F 1 "THERMISTOR" V 2350 6200 50  0000 C CNN
+	1    2450 6200
+	0    1    1    0   
+$EndComp
+Text Label 3050 2600 0    60   ~ 0
+Input to Pi
+Text Label 2400 2350 0    60   ~ 0
+GND
+Text Label 3950 2350 0    60   ~ 0
+VCC
+$Comp
+L R R?
+U 1 1 54662E0A
+P 3550 2350
+F 0 "R?" V 3630 2350 50  0000 C CNN
+F 1 "R" V 3550 2350 50  0000 C CNN
+	1    3550 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L PHOTOR U?
+U 1 1 54662DDC
+P 2950 1800
+F 0 "U?" H 3200 1850 60  0000 C CNN
+F 1 "PHOTO RESISTOR" H 2950 2100 60  0000 C CNN
+	1    2950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 546594AC
+P 2100 4600
+F 0 "D1" H 2100 4700 50  0000 C CNN
+F 1 "ZENER" H 2100 4500 40  0000 C CNN
+	1    2100 4600
+	0    -1   -1   0   
+$EndComp
+Text Label 1350 4250 0    60   ~ 0
+Output from Pi
+Text Label 2400 5200 0    60   ~ 0
+GND
+$Comp
+L GND #PWR1
+U 1 1 54651810
+P 2500 5050
+F 0 "#PWR1" H 2500 5050 30  0001 C CNN
+F 1 "GND" H 2500 4980 30  0001 C CNN
+	1    2500 5050
+	1    0    0    -1  
+$EndComp
+Text Label 3900 3850 0    60   ~ 0
+3.3v
+$Comp
+L LED D2
+U 1 1 54651788
+P 2850 3850
+F 0 "D2" H 2850 3950 50  0000 C CNN
+F 1 "LED" H 2850 3750 50  0000 C CNN
+	1    2850 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 54651784
+P 3450 3850
+F 0 "R2" V 3530 3850 50  0000 C CNN
+F 1 "R" V 3450 3850 50  0000 C CNN
+	1    3450 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L MOSFET_N Q1
+U 1 1 54651757
+P 2400 4250
+F 0 "Q1" H 2410 4420 60  0000 R CNN
+F 1 "MOSFET_N" H 3000 4250 60  0000 R CNN
+	1    2400 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 5100 5650 0    60   ~ 0
+Red
+Text Notes 4500 5400 0    60   ~ 0
+Brown
+Text Notes 5450 5400 0    60   ~ 0
+Orange
+Text Label 5450 5300 0    60   ~ 0
+Output from Pi
+Text Label 5100 5550 0    60   ~ 0
+3.3v
+Text Label 4550 5300 0    60   ~ 0
+GND
+$Comp
+L SERVO U2
+U 1 1 54650A9E
+P 5100 4700
+F 0 "U2" H 5100 4850 60  0000 C CNN
+F 1 "SERVO" H 5100 5100 60  0000 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+Text Label 8000 5400 0    60   ~ 0
+Input to Pi
+Text Label 7200 4600 0    60   ~ 0
+Output from Pi
+Text Label 7200 4450 0    60   ~ 0
+5V
+Text Label 8650 4600 0    60   ~ 0
+GND
+$Comp
+L GND #PWR3
+U 1 1 5464FF9E
+P 8650 4600
+F 0 "#PWR3" H 8650 4600 30  0001 C CNN
+F 1 "GND" H 8650 4530 30  0001 C CNN
+	1    8650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5464FE60
+P 8400 4850
+F 0 "R5" V 8300 4850 50  0000 C CNN
+F 1 "2k" V 8400 4850 50  0000 C CNN
+	1    8400 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5464FE3B
+P 8000 4850
+F 0 "R4" V 8080 4850 50  0000 C CNN
+F 1 "1k" V 8000 4850 50  0000 C CNN
+	1    8000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RANGER U3
+U 1 1 5464FD05
+P 7950 3850
+F 0 "U3" H 7950 4050 60  0000 C CNN
+F 1 "RANGER FINDER" H 7950 4300 60  0000 C CNN
+	1    7950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5464FACA
+P 4500 3200
+F 0 "#PWR2" H 4500 3200 30  0001 C CNN
+F 1 "GND" H 4500 3130 30  0001 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5464FAB0
+P 8700 2500
+F 0 "#PWR4" H 8700 2500 30  0001 C CNN
+F 1 "GND" H 8700 2430 30  0001 C CNN
+	1    8700 2500
+	1    0    0    -1  
+$EndComp
+Text Label 8600 2650 0    60   ~ 0
+GND
+Text Label 6800 2250 0    60   ~ 0
+Output from Pi
+$Comp
+L R R3
+U 1 1 5464FA5F
+P 7700 2250
+F 0 "R3" V 7780 2250 50  0000 C CNN
+F 1 "R" V 7700 2250 50  0000 C CNN
+	1    7700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 5464FA57
+P 8350 2250
+F 0 "D3" H 8350 2350 50  0000 C CNN
+F 1 "LED" H 8350 2150 50  0000 C CNN
+	1    8350 2250
+	1    0    0    -1  
+$EndComp
+Text Label 5750 2950 0    60   ~ 0
+Input to Pi
+Text Label 4400 3350 0    60   ~ 0
+GND
+Text Label 4500 2950 0    60   ~ 0
+3.3v
+$Comp
+L R R1
+U 1 1 5464F78A
+P 5200 3250
+F 0 "R1" V 5280 3250 50  0000 C CNN
+F 1 "5k" V 5200 3250 50  0000 C CNN
+	1    5200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L HALLEFFECT U1
+U 1 1 5464F740
+P 5200 2250
+F 0 "U1" H 5200 2250 60  0000 C CNN
+F 1 "HALLEFFECT" H 5200 2500 60  0000 C CNN
+	1    5200 2250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,51 @@
+Topics
+------
+
+* Overview of the PI
+  * Features / specs (brief)
+  * Talk about Linux
+  * Comparison to a full computer
+  * Why buy a pi?
+    * Full computer (usb, video, audio, ethernet, full processor)
+    * Runs a full OS
+    * Smaller
+    * Cheaper
+    * GPIO pins (the special part)
+* Installation out of the box (brief?)
+* Pi demo (connected to screen, keyboard, mouse, browsing internet)
+* Command-line tools
+  * GPIO from the command-line
+* Having a script run automatically
+* Development on the pi
+  * Mouse, keyboard, monitor
+  * Connect via ssh
+  * Transfer files via filezilla and sftp
+* Working with ssh
+  * screen utility
+  * nano for editing
+  * python command-line
+  * multiple windows
+  * putty to connect on windows
+  * ssh on linux / macos
+* Activities
+  * LED blinking
+  * Buttons
+  * DIY soft buttons
+  * Light sensor
+  * Temperature sensor
+  * Capacitive touch sensor
+  * Servo
+  * DC motor with transistors
+  * Range finder
+  * IO through attiny (WS2812 strip)
+  * Web server demo
+  * Tweeting demo
+* Art that receives sensor input and changes it's output
+  * Motion sensor
+  * Responds to temperature / light levels
+  * Ambient sound
+* Ideas for installations
+  * Tweet to print (search for hashtab, send one random photo every 5 mins)
+  * Light display that changes colour based on ambient light
+  * Box that vibrates when somebody is close
+

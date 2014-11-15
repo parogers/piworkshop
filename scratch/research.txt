@@ -1,0 +1,32 @@
+LED voltage calculations:
+
+http://electronicsclub.info/leds.htm
+
+Raspberry pi GPIO specs:
+
+http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/raspberry-pi/gpio-pin-electrical-specifications
+
+Nokia 5110 on the pi:
+
+https://learn.adafruit.com/nokia-5110-3310-lcd-python-library?view=all
+
+HDMI to DVI-D:
+
+http://elinux.org/RPi_VerifiedPeripherals#HDMI-.3EDVI-D_cables
+
+NES emulator: (faster than stock fceu)
+
+http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=52879&p=406208&hilit=fceux
+
+
+GPIO protection: (input and output)
+
+	http://www.petervis.com/Raspberry_PI/Raspberry_Pi_GPIO_Header/Raspberry_Pi_GPIO_Header_Pin_Protection.html
+
+Zener diodes:
+
+	http://www.evilmadscientist.com/2012/basics-introduction-to-zener-diodes/
+
+AVR optiboot: (very small bootloader)
+
+	http://code.google.com/p/optiboot/

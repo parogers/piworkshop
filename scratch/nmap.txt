@@ -1,0 +1,32 @@
+Checkout:
+
+http://serialized.net/2013/04/headless_rpi/
+
+MAC address prefix:
+
+B8:27:EB
+
+
+peter@jetsam:~$ sudo nmap -n -sP 192.168.123.0/24
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2014-10-12 13:30 EDT
+Nmap scan report for 192.168.123.1
+Host is up (0.010s latency).
+MAC Address: 30:85:A9:69:5C:5C (Unknown)
+Nmap scan report for 192.168.123.60
+Host is up (0.070s latency).
+MAC Address: 30:85:A9:AD:06:3C (Unknown)
+Nmap scan report for 192.168.123.180
+Host is up (0.0057s latency).
+MAC Address: B8:27:EB:75:FE:4D (Unknown)
+Nmap scan report for 192.168.123.213
+Host is up.
+Nmap scan report for 192.168.123.230
+Host is up (0.079s latency).
+MAC Address: 20:64:32:82:BC:91 (Unknown)
+Nmap done: 256 IP addresses (5 hosts up) scanned in 3.56 seconds
+
+
+XML output (run as root to get mac addresses):
+
+nmap -oX - -n -sP 192.168.1.0/24

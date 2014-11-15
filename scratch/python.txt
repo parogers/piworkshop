@@ -1,0 +1,4 @@
+Checking version of pi:
+
+http://raspi.tv/2013/rpi-gpio-basics-2-how-to-check-what-pi-board-revision-you-have
+

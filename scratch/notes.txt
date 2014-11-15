@@ -1,0 +1,107 @@
+Intro to GPIO
+Intro to the PI
+-linux system
+-some basic command-line utils
+-connecting to the pi via ssh
+Programming
+-python
+
+SSH - connect without storing the host key:
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no pi@192.168.123.101
+
+Basic components
+-leds
+-buttons
+-motor/h-bridge
+-servo
+-IR sensor
+-temp sensor/thermistor
+-potentiometer
+-reed switches
+
+Advanced
+-accelerometer
+-webcam
+
+Programming examples
+-how to tweet something
+-simple web server
+-webcam
+
+Level shifting - 3v to 5v
+-interfacing with 5v hardware
+
+Onboard attiny
+-reading analog values
+
+Python + webserver
+-python process reads from fifo
+-program controls GPIO, blinks lights, etc
+-webpage connects to script through cgi
+-cgi writes to fifo (write less than PIPE_BUF at a time)
+-python ipc
+
+Raspberry pi as access point
+-usb power to laptop
+
+Development environment
+-develop directly on the pi (nano editor, python command-line)
+-debug statements
+-fast iterations (write code, test, output, debug statements, return to code)
+-copy files for backup (filezilla and sftp)
+-safe and stable environment
+-create a script to run automatically on boot
+-running 'screen' sessions
+
+Handouts
+* diagrams
+* writeup
+* folded pi schematic (header pins, specs)
+* quick reference
+
+ATTINY SPI interface
+* modes
+  * GPIO (analog and digital)
+  * LED driver
+* GPIO mode
+
+Python gpio module
+* wget http://downloads.sourceforge.net/project/raspberry-gpio-python/RPi.GPIO-0.5.8.tar.gz
+
+AVR header files
+* /usr/lib/avr/include/avr
+* iotnx4.h - pin assignments, interrupt vectors, etc
+
+Switching audio source on the pi
+* http://www.raspberrypi.org/documentation/configuration/audio-config.md
+
+Pin standards
+* BCM - pins on the broadcom chip
+* BOARD - physical pins on the board, as numbered by the header
+* WIRING - wiring/gpio pin numbers
+
+Tutorials
+* https://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi
+* http://garagelab.com/profiles/blogs/tutorial-how-to-use-the-hall-effect-sensor-with-arduino (5k resistor and 3.3v works fine)
+* http://www.hobbypartz.com/topromisesg9.html (SG-90 servo page)
+* http://forum.arduino.cc/index.php?topic=14146.0 (servo stuff)
+* http://bansky.net/blog_stuff/images/servo_pulse_width.png
+
+LED reistor values
+Standard Red: 1.7
+Super Bright Red: 2.2
+Standard Green: 2.2
+High Intensity Blue: 3.0 - 3.5
+High Intensity White: 3.0 - 3.5
+
+Resistor values
+50
+100+
+220+
+500
+1k+
+2k+
+4.7k+
+10k+
+20k+
+

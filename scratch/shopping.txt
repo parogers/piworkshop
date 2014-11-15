@@ -1,0 +1,69 @@
+PI stuff:
+
+http://www.buyapi.ca/product/hdmi-to-vga-adapter/
+($13)
+
+http://www.buyapi.ca/product/miniature-wifi-usb-module-for-raspberry-pi/
+($15)
+
+Model B
+http://www.buyapi.ca/product/raspberry-pi-starter-kit/
+($75)
+
+Model A
+http://www.buyapi.ca/product/raspberry-pi-model-a/
+($30)
+
+Model B+
+http://www.buyapi.ca/product/raspberry-pi-model-b-plus/
+($40)
+
+http://www.buyapi.ca/product/bluetooth-usb-adaptor/
+($5)
+
+Male/Female jumpers (x40)
+http://www.dipmicro.com/store/WIRE-JMP40FM
+($3)
+
+Breadboard
+http://www.dipmicro.com/store/SYB-120
+($5)
+
+LCD (16x2)
+http://www.dipmicro.com/store/SHIELD-LCDKEY-G
+($10)
+
+Nokia 5110 128x128 LCD
+http://www.dipmicro.com/store/LCD-NOKIA5110-RGB
+($10)
+
+Nokia 5110 84x48 LCD
+http://www.dipmicro.com/store/LCD-NOKIA5110
+($7)
+
+Attiny84
+SPI interface to PI, controls ws2812 strips
+
+Servo motor
+http://www.robotshop.com/ca/en/hitec-hs311-servo.html
+($9)
+
+SD card
+???
+
+Wallwart PSU
+???
+
+Battery pack
+???
+
+Ethernet cable
+???
+
+Relay board (2 relays)
+http://www.buyapi.ca/product/2-channel-relay-module-for-arduino-raspberry-pi-12v-keyes/
+($5)
+
+HDMI to DVI-D
+http://www.canadacomputers.com/product_info.php?cPath=98_102&item_id=032486
+($15)

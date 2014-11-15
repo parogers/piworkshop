@@ -1,0 +1,42 @@
+Configuring the pi disk image
+* Raspbian Wheezy disk image
+* Fix locale problem (run raspi-config, choose en_US.UTF-8)
+* setup alias for gpio (add alias gpio="gpio -g" to .bash_aliases)
+* apt-get update
+* apt-get upgrade
+* apt-get install python-dev
+* apt-get install avahi-daemon
+* Change host name
+* WiringPi
+  * http://wiringpi.com/
+  * install the library and utilities
+
+    git clone git://git.drogon.net/wiringPi
+    cd wiringPi
+    ./build
+
+* Arduino IDE
+  apt-get install arduino
+
+* Setup spi
+  * Un-blacklist spi module in /etc/modprobe.d/raspi-blacklist.conf
+  * modprobe spi_bcm2708 (to avoid reboot)
+
+* Attiny for arduino
+  * http://playground.arduino.cc/Main/ArduinoOnOtherAtmelChips
+  * https://github.com/damellis/attiny/
+
+    git clone https://github.com/damellis/attiny.git
+    sudo cp -R attiny/attiny /usr/share/arduino/hardware/
+
+  * Verify that the onboard attiny is alive and well
+    (should report signature and fuse check)
+
+    avrdude -c gpio -p t84
+
+* Setup arduino ide for SPI programming (see spi.txt)
+
+* Run fixspi.sh script on boot (/etc/rc.local)
+  * Copy into /usr/local/bin
+
+

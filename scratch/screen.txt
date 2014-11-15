@@ -1,0 +1,18 @@
+Launch screen:
+
+	screen
+
+Detach screen session (background task):
+
+	Control+A d
+
+Reattach detached session:
+
+	screen -r
+	(automatic if there's only one)
+
+	screen -list
+	(list of detached sessions)
+
+	screen -r pid.tty.host
+	(attach to a specific screen)

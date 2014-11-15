@@ -1,0 +1,10 @@
+# lamp.py
+
+class Lamp(object):
+    state = False
+
+    def set_on(self, on):
+        self.state = on
+        # Update GPIO pin
+        # ...
+

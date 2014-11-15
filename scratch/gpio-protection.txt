@@ -1,0 +1,22 @@
+http://www.petervis.com/Raspberry_PI/Raspberry_Pi_GPIO_Header/Raspberry_Pi_GPIO_Header_Pin_Protection.html
+
+3.3v	5v	(pin 1 / 2)
+02	5v
+03	GND
+04	14
+GND	15
+17	18
+27	GND
+22	23
+3.3v	24
+10	GND
+09	25
+11	08
+GND	07
+ID_SD	ID_SC
+05	GND
+06	12
+13	GND
+19	16
+26	20
+GND	21	(pin 39 / 40)

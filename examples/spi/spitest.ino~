@@ -1,0 +1,46 @@
+#define BV(x)    (1<<(x))
+
+void SPI_Init (void)
+{
+    DDRB = 0b00110010;
+    USICR = BV(USIWM0) | BV(USICS1); /* | BV(USICS0);*/
+}
+
+char SPI_Exchange (char out)
+{
+    USIDR = out;
+    USISR = (1<<USIOIF);
+    while (!(USISR&(1<<USIOIF)));
+    return USIDR;
+}
+
+void setup()
+{
+  SPI_Init();
+/*
+  pinMode(PB4, OUTPUT);
+  digitalWrite(PB4, LOW);
+  pinMode(PB2, INPUT);
+  
+  digitalWrite(PB4, HIGH);
+  delay(3000);
+  digitalWrite(PB4, LOW);
+  */
+}
+
+static char out = 55;
+
+void loop()
+{
+  
+  /* Wait for the CS line to go high */
+  if (PINB & BV(PB3)) {
+    out = SPI_Exchange(out);
+//    delay(10);
+    //PORTB |= BV(PB4);
+    //digitalWrite(PB4, HIGH);
+    //delay(100);
+    //digitalWrite(PB4, LOW);
+  }
+}
+
