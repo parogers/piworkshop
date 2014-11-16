@@ -9,6 +9,10 @@ from lamp import Lamp
 
 # The FIFO buffer that will receive commands for controlling the lamp
 fifoPath = "comm"
+# Create the FIFO if it doesn't already exist
+if (not os.path.exists(fifoPath)):
+    os.mkfifo(fifoPath)
+    os.chmod(fifoPath, 0666)
 
 #tmp = open(fifoPath, "w")
 #print "HERE"
